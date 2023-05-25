@@ -1,0 +1,148 @@
+* {
+	box-sizing: border-box;
+}
+
+.topo{
+    width: 414px;
+    height: 92px;
+    background: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+h1{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+}
+
+h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+h3{
+    margin-top: 31px;
+    margin-left: 19px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+}
+
+.container{
+    width: 414px;
+    height: 842px;
+    top: 92px;
+    bottom: 92px;
+    background: #E5E5E5;
+    position: absolute;
+    
+}
+
+.container-prato, .container-sobremesa, .container-bebida{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-top: 17px;
+    margin-left: 19px;
+}
+
+img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin: 15px 14px 8px;
+}
+.frango,.carne,.peixe,.coca,.guarana,.pepsi,.bolo,.torta,.pudim{
+    width: 172px;
+    height: 216px;
+    margin-right: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.descriçao{
+    margin-left: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.subdescriçao{
+    margin: 5px 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+
+.preço{
+    margin-top: 5px;
+    margin-left: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.rodape{
+    width: 414px;
+    height: 92px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 364px;
+    height: 61px;
+    background: #CBCBCB;
+    border-radius: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+}
+
+.selecionado{
+    border:5px solid #32B72F;
+}
+
+.botao-ativado{
+    background: #32B72F;
+}

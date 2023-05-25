@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Driven Eats</title>
+</head>
+<body>
+    <div class="topo">
+        <h1>Driven eats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+    </div>
+
+    <div class="container">
+
+        <h3>Primeiro, seu prato</h3>
+
+        <div class="container-prato">
+            <div class="frango"  data-test="dish" onclick="selecionarPrato('.frango')">
+                <img src="frango_yin_yang.png"/>
+                <div data-test="item-name" class="descriçao">Frango</div>
+                <div class="subdescriçao">Um pouco de batata, um pouco de salada</div>
+                <div data-test="item-price" class="preço">R$ 24,00</div>
+            </div>
+            <div class="carne"  data-test="dish" onclick="selecionarPrato('.carne')">
+                <img src="frango_yin_yang.png"/>
+                <div data-test="item-name" class="descriçao">Carne</div>
+                <div class="subdescriçao">Um pouco de batata, um pouco de salada</div>
+                <div data-test="item-price" class="preço">R$ 22,00</div>
+            </div>
+            <div class="peixe"  data-test="dish" onclick="selecionarPrato('.peixe')">
+                <img src="frango_yin_yang.png"/>
+                <div data-test="item-name" class="descriçao">Peixe</div>
+                <div class="subdescriçao">Um pouco de batata, um pouco de salada</div>
+                <div data-test="item-price" class="preço">R$ 20,00</div>
+            </div>
+        </div>
+
+        <h3>Agora, sua bebida</h3>
+
+        <div class="container-bebida">
+            <div class="coca" data-test="drink" onclick="selecionarBebida('.coca')">
+                <img src="coca-cola.png"/>
+                <div data-test="item-name" class="descriçao">Coca</div>
+                <div class="subdescriçao">Coca gelada</div>
+                <div data-test="item-price" class="preço">R$ 9,00</div>
+            </div>
+            <div class="guarana" data-test="drink" onclick="selecionarBebida('.guarana')">
+                <img src="coca-cola.png"/>
+                <div data-test="item-name" class="descriçao">Guarana</div>
+                <div class="subdescriçao">Guarana gelado</div>
+                <div data-test="item-price" class="preço">R$ 7,00</div>
+            </div>
+            <div class="pepsi" data-test="drink" onclick="selecionarBebida('.pepsi')">
+                <img src="coca-cola.png"/>
+                <div data-test="item-name" class="descriçao">Pepsi</div>
+                <div class="subdescriçao">Pepsi gelada</div>
+                <div data-test="item-price" class="preço">R$ 5,00</div>
+            </div>
+        </div>
+
+        <h3>Por fim, sua sobremesa</h3>
+
+        <div class="container-sobremesa">
+            <div class="bolo" data-test="dessert" onclick="selecionarSobremesa('.bolo')">
+                <img src="pudim.png"/>
+                <div data-test="item-name" class="descriçao">Bolo</div>
+                <div class="subdescriçao">Apenas bolo</div>
+                <div data-test="item-price" class="preço">R$ 12,00</div>
+            </div>
+            <div class="pudim" data-test="dessert" onclick="selecionarSobremesa('.pudim')">
+                <img src="pudim.png"/>
+                <div data-test="item-name" class="descriçao">Pudim</div>
+                <div class="subdescriçao">Apenas pudim</div>
+                <div data-test="item-price" class="preço">R$ 10,00</div>
+            </div>
+            <div class="torta" data-test="dessert" onclick="selecionarSobremesa('.torta')">
+                <img src="pudim.png"/>
+                <div data-test="item-name" class="descriçao">Torta</div>
+                <div class="subdescriçao">Apenas torta</div>
+                <div data-test="item-price" class="preço">R$ 8,00</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="rodape">
+        <button data-test="order-btn" class="fechar" disabled onclick="oi()">Selecione os 3 itens para fechar o pedido</button>
+    </div>
+
+    <script src="./script.js" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
