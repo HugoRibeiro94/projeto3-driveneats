@@ -72,5 +72,5 @@ function enviarPedido(soma){
     -Total:R$${soma},00`;
     const urlText = encodeURIComponent(mensagem);
     const url = `https://wa.me/5524981030211?text=${urlText}`;
-    window.location.href = url;
+    window.open(url);
 }
