@@ -46,11 +46,11 @@ h3{
 
 .container{
     width: 414px;
-    height: 842px;
-    top: 92px;
-    bottom: 92px;
+    height: 942px;
+    margin-top: 92px;
+    margin-bottom: 92px;
     background: #E5E5E5;
-    position: absolute;
+    
     
 }
 
@@ -104,6 +104,7 @@ img{
 .preço{
     margin-top: 5px;
     margin-left: 14px;
+    margin-bottom: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -118,6 +119,7 @@ img{
     position: fixed;
     left: 0px;
     bottom: 0px;
+    
     background: #FFFFFF;
     display: flex;
     align-items: center;

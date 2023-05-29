@@ -30,6 +30,8 @@
                 <div data-test="item-name" class="descriçao">Frango</div>
                 <div class="subdescriçao">Um pouco de batata, um pouco de salada</div>
                 <div data-test="item-price" class="preço">R$ 24,00</div>
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+
             </div>
             <div class="carne"  data-test="dish" onclick="selecionarPrato('.carne')">
                 <img src="frango_yin_yang.png"/>
@@ -42,6 +44,8 @@
                 <div data-test="item-name" class="descriçao">Peixe</div>
                 <div class="subdescriçao">Um pouco de batata, um pouco de salada</div>
                 <div data-test="item-price" class="preço">R$ 20,00</div>
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+
             </div>
         </div>
 
@@ -53,18 +57,24 @@
                 <div data-test="item-name" class="descriçao">Coca</div>
                 <div class="subdescriçao">Coca gelada</div>
                 <div data-test="item-price" class="preço">R$ 9,00</div>
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+
             </div>
             <div class="guarana" data-test="drink" onclick="selecionarBebida('.guarana')">
                 <img src="coca-cola.png"/>
                 <div data-test="item-name" class="descriçao">Guarana</div>
                 <div class="subdescriçao">Guarana gelado</div>
                 <div data-test="item-price" class="preço">R$ 7,00</div>
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+
             </div>
             <div class="pepsi" data-test="drink" onclick="selecionarBebida('.pepsi')">
                 <img src="coca-cola.png"/>
                 <div data-test="item-name" class="descriçao">Pepsi</div>
                 <div class="subdescriçao">Pepsi gelada</div>
                 <div data-test="item-price" class="preço">R$ 5,00</div>
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+
             </div>
         </div>
 
@@ -76,25 +86,31 @@
                 <div data-test="item-name" class="descriçao">Bolo</div>
                 <div class="subdescriçao">Apenas bolo</div>
                 <div data-test="item-price" class="preço">R$ 12,00</div>
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+
             </div>
             <div class="pudim" data-test="dessert" onclick="selecionarSobremesa('.pudim')">
                 <img src="pudim.png"/>
                 <div data-test="item-name" class="descriçao">Pudim</div>
                 <div class="subdescriçao">Apenas pudim</div>
                 <div data-test="item-price" class="preço">R$ 10,00</div>
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+
             </div>
             <div class="torta" data-test="dessert" onclick="selecionarSobremesa('.torta')">
                 <img src="pudim.png"/>
                 <div data-test="item-name" class="descriçao">Torta</div>
                 <div class="subdescriçao">Apenas torta</div>
                 <div data-test="item-price" class="preço">R$ 8,00</div>
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+
             </div>
         </div>
 
     </div>
 
     <div class="rodape">
-        <button data-test="order-btn" class="fechar" disabled onclick="oi()">Selecione os 3 itens para fechar o pedido</button>
+        <button data-test="order-btn" class="fechar" disabled onclick="somarPedido()">Selecione os 3 itens para fechar o pedido</button>
     </div>
 
     <script src="./script.js" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

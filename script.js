@@ -48,3 +48,35 @@ function selecionarSobremesa(selecao){
     ativarBotao();
 }
 
+function somarPedido(){
+    const prato = document.querySelector('.container-prato .selecionado .preço').innerText;
+    const bebida = document.querySelector('.container-bebida .selecionado .preço').innerText;
+    const sobremesa = document.querySelector('.container-sobremesa .selecionado .preço').innerText;
+
+    console.log(prato)
+    console.log(bebida)
+    console.log(sobremesa)
+    const preçoPrato = prato.slice(3);
+    const preçoBebida = bebida.slice(3);
+    const preçoSobremesa = sobremesa.slice(3);
+    
+    let soma = parseInt(preçoPrato) + parseInt(preçoBebida) + parseInt(preçoSobremesa);
+    console.log(soma)
+    enviarPedido(soma)
+}
+function enviarPedido(soma){
+    const prato = document.querySelector('.container-prato .selecionado .descriçao').innerText;
+    const bebida = document.querySelector('.container-bebida .selecionado .descriçao').innerText;
+    const sobremesa = document.querySelector('.container-sobremesa .selecionado .descriçao').innerText;
+    console.log(prato)
+    console.log(bebida)
+    console.log(sobremesa)
+    const mensagem = `Olá, gostaria de fazer o pedido\n
+    -Prato:${prato}\n
+    -Bebida:${bebida}\n
+    -Sobremesa:${sobremesa}\n
+    -Total:R$${soma},00`;
+    const urlText = encodeURIComponent(mensagem);
+    const url = `https://wa.me/5524981030211?text=${urlText}`;
+    window.location.href = url;
+}
