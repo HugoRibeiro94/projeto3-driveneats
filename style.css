@@ -48,7 +48,7 @@ h3{
     width: 414px;
     height: 942px;
     margin-top: 92px;
-    margin-bottom: 92px;
+    margin-bottom: 122px;
     background: #E5E5E5;
     
     
@@ -61,16 +61,25 @@ h3{
     margin-top: 17px;
     margin-left: 19px;
 }
+.container-bebida::-webkit-scrollbar {
+    display: none;
+}
+.container-sobremesa::-webkit-scrollbar {
+    display: none;
+}
+.container-prato::-webkit-scrollbar {
+    display: none;
+}
 
 img{
     width: 144px;
     height: 87px;
     border-radius: 4px;
-    margin: 15px 14px 8px;
+    margin: 15px 8px;
 }
 .frango,.carne,.peixe,.coca,.guarana,.pepsi,.bolo,.torta,.pudim{
     width: 172px;
-    height: 216px;
+    height: 212px;
     margin-right: 16px;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
@@ -78,7 +87,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+    position: relative;
 }
 
 .descriçao{
@@ -92,7 +101,7 @@ img{
 }
 
 .subdescriçao{
-    margin: 5px 14px;
+    margin-left: 14px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -102,9 +111,7 @@ img{
 }
 
 .preço{
-    margin-top: 5px;
     margin-left: 14px;
-    margin-bottom: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -113,13 +120,21 @@ img{
     color: #000000;
 }
 
+ion-icon{
+    display: none;
+    font-size: 20px;
+    color: #32B72F;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
 .rodape{
     width: 414px;
     height: 92px;
     position: fixed;
     left: 0px;
     bottom: 0px;
-    
     background: #FFFFFF;
     display: flex;
     align-items: center;
@@ -143,6 +158,10 @@ button{
 
 .selecionado{
     border:5px solid #32B72F;
+}
+
+.selecionado ion-icon{
+    display: inline;
 }
 
 .botao-ativado{
