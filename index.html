@@ -111,7 +111,17 @@
     </div>
 
     <div class="rodape">
-        <button data-test="order-btn" class="fechar" disabled onclick="somarPedido()">Selecione os 3 itens para fechar o pedido</button>
+        <button data-test="order-btn" class="fechar" disabled onclick="ativarBonus()">Selecione os 3 itens para fechar o pedido</button>
+    </div>
+    
+    <div class="bonus display">
+        <div class="confirmar">Confirme seu pedido</div>
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="total"></div>
+        <button class="certo" onclick="somarPedido()">Tudo certo, pode pedir</button>
+        <button class="cancelar">Cancelar</button>
     </div>
 
     <script src="./script.js"></script>
